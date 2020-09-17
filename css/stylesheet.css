@@ -1,0 +1,478 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size:62.5%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #eeeeee;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+/* headerの部分 */
+header {
+  margin: 0 auto;
+  padding: 1.5vh 1.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* header-titleの部分 */
+.header-title a {
+  font-size: 7rem;
+  width: 30%;
+  color: #234d67;
+}
+
+/* navigationの部分 */
+.navigation {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation a{
+  display: inline-block;
+  font-size: 4rem;
+  color: #364d5c;
+}
+
+/* top-screenの部分 */
+.top-screen {
+  margin: 0 auto;
+  padding-top: 10vh;
+}
+
+/* content_1の部分 */
+.content_1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lines_1{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  height: 70vh;
+  width: 30%;
+}
+
+.lines_1 span:nth-child(1){
+  border-left: 2rem solid #deb298;
+  height:60vh ;
+}
+.lines_1 span:nth-child(2){
+  border-left: 2rem solid #deb298;
+  height:45vh ;
+}
+
+.lines_1 span:nth-child(3){
+  border-left: 2rem solid #deb298;
+  height:30vh ;
+}
+
+
+.content_1-right {
+  width: 70%;
+  height: 70vh;
+
+  background-color: #234d67;
+
+  color: #eeeeee;
+  font-size:8rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.content_1-right p:nth-child(1){
+  height: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 3vw;
+}
+.content_1-right p:nth-child(2){
+  height: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 3vw;
+}
+
+/* roads_1のところ */
+.roads_1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  margin-bottom: 30rem;
+}
+
+.roads_1 span:nth-child(1){
+  width:45%
+}
+.roads_1 span:nth-child(2){
+  width: 10%;
+  border-top: 1rem solid #deb298;
+  position: relative;
+}
+.roads_1 span:nth-child(2)::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:47.5%;
+  width: 1rem;
+  height: 20rem;
+  background-color: #234d67;
+}
+.roads_1 span:nth-child(3){
+  width:45%
+}
+
+
+
+
+/* introductionのところ */
+.introduction{
+  padding: 5rem;
+}
+
+.content_2{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.intro-title{
+  position: absolute;
+  top: 0;
+  left: 5%;
+  font-size: 6.5em;
+  color: #eeeeee;
+  text-align: center;
+
+  background-color: #234d67;
+  border-radius: 50%;
+  width: 6em;
+  height: 6em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lines_2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.lines_2 span:nth-child(1){
+  display: block;
+  border-top: 2rem solid #deb298;
+  width: 45vw;
+}
+.lines_2 span:nth-child(2){
+  display: block;
+  border-top: 2rem solid #deb298;
+  width: 30vw;
+  margin: 10vh 0;
+}
+.lines_2 span:nth-child(3){
+  display: block;
+  border-top: 2rem solid #deb298;
+  width: 15vw;
+}
+
+.my-image {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+
+  border: 1rem solid #234d67;
+  border-radius: 50%;
+  width: 15vw;
+  height: 35vh;
+}
+
+.intro-content{
+  position: absolute;
+  top: 40%;
+  left:25%;
+
+  border:1rem solid #eeeeee;
+  background-color: #234d67;
+  color: #eeeeee;
+  width: 70%;
+  height: 55%;
+  padding: 2%;
+}
+
+.my-name{
+  font-size: 5rem;
+}
+
+.skills, .languages, .hobbies{
+  display: block;
+  font-size: 3rem;
+  padding: 3vh 0;
+}
+
+.roads_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.roads_2 span:nth-child(1){
+  width:45%
+}
+.roads_2 span:nth-child(2){
+  width: 10%;
+  border-top: 1rem solid #deb298;
+  position: relative;
+}
+.roads_2 span:nth-child(2)::before{
+  content: "";
+  position: absolute;
+  top:-15vh;
+  left:50%;
+  width: 1rem;
+  height: 20rem;
+  background-color: #234d67;
+}
+.roads_2 span:nth-child(3){
+  width:45%
+}
+
+/* Workのセクション */
+
+.work {
+  padding: 2%;
+}
+
+.content_3 {
+  width: 100%;
+}
+
+.work-container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30vh;
+}
+
+.lines_3{
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lines_3 span:nth-child(1){
+  display: block;
+  border-right: 2rem solid #deb298;
+  height: 15vh;
+}           
+.lines_3 span:nth-child(2){
+  display: block;
+  border-right: 2rem solid #deb298;
+  height: 30vh;
+}           
+.lines_3 span:nth-child(3){
+  display: block;
+  border-right: 2rem solid #deb298;
+  height: 45vh;
+}           
+
+.work-triangle {
+  width:60%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.work-triangle::before{
+  content: "";
+  position: absolute;
+  top: 0% ;
+  left: 25%;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 250px 432px 250px;
+  border-color: transparent transparent #234d67 transparent;
+}
+
+.work-triangle::after{
+  content: "Work";
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: 5;
+  color: #eeeeee;
+  font-size: 6rem;
+}
+
+.work-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.work-link{
+  display: inline-block;
+  margin: 0 auto;
+}
+.work-link a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1rem solid #234d67;
+}
+
+.work-link img{
+  object-fit: cover;
+}
+
+.work-link p{
+  text-align: center;
+  color:#234d67;
+  font-size: 2rem;
+}
+
+.roads_3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40rem;
+  margin-bottom: 15rem;
+}
+
+.roads_3 span:nth-child(1){
+  width:45%
+}
+.roads_3 span:nth-child(2){
+  width: 10%;
+  border-top: 1rem solid #deb298;
+  position: relative;
+}
+.roads_3 span:nth-child(2)::before{
+  content: "";
+  position: absolute;
+  top:-32.5vh;
+  left:47.5%;
+  width: 1rem;
+  height: 20rem;
+  background-color: #234d67;
+}
+.roads_3 span:nth-child(3){
+  width:45%
+}
+
+/*  Contact */
+.bar {
+  border-bottom: 3rem solid #234d67;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content_4 {
+  padding: 3rem 3rem 0 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content_4-left{
+  width: 70%;
+  padding-left: 5rem;
+  margin-bottom: 10vh;
+}
+
+.contact-title {
+  font-size: 8rem;
+  color: #234d67;
+  line-height: 10rem;
+}
+.email-address, .email-address a{
+  font-size: 4rem;
+  color: #234d67;
+  text-decoration: none;
+  line-height: 20rem;
+}
+
+.sns-links_2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sns-link_2-item {
+  display: flex;
+  align-items: center;
+}
+.sns-link_2-item p{
+  display: block;
+  font-size: 3rem;
+  color: #234d67;
+  padding: 1rem;
+}
+
+.sns-link_2-item span{
+  color: #234d67;
+  padding: 1rem;
+}
+
+.lines_4{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 20%;
+}
+
+.lines_4 span:nth-child(1){
+  border-left: 2rem solid #deb298;
+  height:45vh ;
+}
+.lines_4 span:nth-child(2){
+  border-left: 2rem solid #deb298;
+  height:30vh ;
+}
+
+.lines_4 span:nth-child(3){
+  border-left: 2rem solid #deb298;
+  height:15vh ;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #234d67;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: #eeeeee;
+  font-size: 1.5rem;
+}
