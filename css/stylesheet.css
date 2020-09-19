@@ -10,6 +10,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #eeeeee;
   -webkit-text-size-adjust: 100%;
+  font-size: 1.6em;
 }
 
 a {
@@ -19,6 +20,8 @@ a {
 li{
   list-style: none;
 }
+
+
 /* headerの部分 */
 header {
   margin: 0 auto;
@@ -27,7 +30,6 @@ header {
   justify-content: space-between;
 }
 
-/* header-titleの部分 */
 .header-title a {
   font-size: 7rem;
   width: 30%;
@@ -43,31 +45,35 @@ header {
 }
 
 .navigation a{
-  display: inline-block;
+  display: block;
   font-size: 4rem;
   color: #364d5c;
+  transition: all .3s;
+  padding: 1.5rem;
 }
 
+.navigation a:hover{
+  color: #eeeeee;
+  background: #234d67;
+}
 /* top-screenの部分 */
 .top-screen {
   margin: 0 auto;
   padding-top: 10vh;
 }
 
-/* content_1の部分 */
 .content_1 {
   display: flex;
   justify-content: space-between;
 }
 
 .lines_1{
+  width: 30%;
+  height: 70vh;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
-  height: 70vh;
-  width: 30%;
 }
-
 .lines_1 span:nth-child(1){
   border-left: 2rem solid #deb298;
   height:60vh ;
@@ -76,7 +82,6 @@ header {
   border-left: 2rem solid #deb298;
   height:45vh ;
 }
-
 .lines_1 span:nth-child(3){
   border-left: 2rem solid #deb298;
   height:30vh ;
@@ -86,23 +91,20 @@ header {
 .content_1-right {
   width: 70%;
   height: 70vh;
-
   background-color: #234d67;
-
   color: #eeeeee;
   font-size:8rem;
-
   display: flex;
   flex-direction: column;
 }
 
-.content_1-right p:nth-child(1){
+.content_1-right h2:nth-child(1){
   height: 50%;
   display: flex;
   align-items: center;
   padding-left: 3vw;
 }
-.content_1-right p:nth-child(2){
+.content_1-right h2:nth-child(2){
   height: 50%;
   display: flex;
   align-items: center;
@@ -119,7 +121,7 @@ header {
 }
 
 .roads_1 span:nth-child(1){
-  width:45%
+  width:45%;
 }
 .roads_1 span:nth-child(2){
   width: 10%;
@@ -130,41 +132,45 @@ header {
   content: "";
   position: absolute;
   top:0;
-  left:47.5%;
+  left: 50%;
   width: 1rem;
   height: 20rem;
   background-color: #234d67;
 }
 .roads_1 span:nth-child(3){
-  width:45%
+  width:45%;
 }
-
-
-
 
 /* introductionのところ */
 .introduction{
-  padding: 5rem;
+  margin: 0 auto;
 }
 
 .content_2{
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100vh;
+}
+
+.content_2-top{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+.content_2-bottom{
+  display: flex;
+  justify-content: space-around;
 }
 
 .intro-title{
-  position: absolute;
-  top: 0;
-  left: 5%;
-  font-size: 6.5em;
+  font-size: 6rem;
   color: #eeeeee;
   text-align: center;
 
   background-color: #234d67;
   border-radius: 50%;
-  width: 6em;
-  height: 6em;
+  width: 35rem;
+  height: 35rem;
 
   display: flex;
   align-items: center;
@@ -172,14 +178,9 @@ header {
 }
 
 .lines_2 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
-
   display: flex;
   flex-direction: column;
-  align-content: space-around;
+  padding: 5rem 0;
 }
 
 .lines_2 span:nth-child(1){
@@ -200,49 +201,40 @@ header {
 }
 
 .my-image {
-  position: absolute;
-  top: 60%;
-  left: 5%;
-
   border: 1rem solid #234d67;
   border-radius: 50%;
-  width: 15vw;
-  height: 35vh;
+  width: 20%;
+  height: 80%;
 }
 
 .intro-content{
-  position: absolute;
-  top: 40%;
-  left:25%;
-
   border:1rem solid #eeeeee;
   background-color: #234d67;
   color: #eeeeee;
+  padding: 5rem;
   width: 70%;
-  height: 55%;
-  padding: 2%;
 }
 
 .my-name{
   font-size: 5rem;
+  padding-bottom: 3rem;
 }
 
 .skills, .languages, .hobbies{
-  display: block;
   font-size: 3rem;
-  padding: 3vh 0;
+  padding: 1.5rem 0;
 }
 
 .roads_2{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15rem;
-  margin-bottom: 15rem;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
 }
 
 .roads_2 span:nth-child(1){
-  width:45%
+  width:45%;
 }
 .roads_2 span:nth-child(2){
   width: 10%;
@@ -259,14 +251,10 @@ header {
   background-color: #234d67;
 }
 .roads_2 span:nth-child(3){
-  width:45%
+  width:45%;
 }
 
 /* Workのセクション */
-
-.work {
-  padding: 2%;
-}
 
 .content_3 {
   width: 100%;
@@ -312,12 +300,13 @@ header {
   content: "";
   position: absolute;
   top: 0% ;
-  left: 25%;
+  left: 30%;
+  z-index: 5;
 
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 250px 432px 250px;
+  border-width: 0 25rem 43.5rem 25rem;
   border-color: transparent transparent #234d67 transparent;
 }
 
@@ -326,34 +315,55 @@ header {
   display: block;
   position: absolute;
   top: 70%;
-  left: 50%;
+  left: 52.5%;
   z-index: 5;
   color: #eeeeee;
-  font-size: 6rem;
+  font-size: 7rem;
 }
 
-.work-grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+.work-links{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .work-link{
-  display: inline-block;
   margin: 0 auto;
 }
+
 .work-link a{
   display: block;
+  width: 25rem;
+  height: 25rem;
+  border: 0.5rem solid #234d67;
+  position: relative;
+}
+
+.work-link a::before {
+  content: "";
+  background-color: rgba(35, 77, 103, 0.7);
+  position: absolute;
   width: 100%;
   height: 100%;
-  border: 1rem solid #234d67;
+
+  transition: all .7s;
 }
+
+.work-link a:hover::before {
+  background-color: transparent;
+  transform-origin: 50% 50%;
+  transform: scale(0);
+}
+
 
 .work-link img{
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .work-link p{
+  line-height: 5rem;
   text-align: center;
   color:#234d67;
   font-size: 2rem;
@@ -363,29 +373,29 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40rem;
+  margin-top: 30rem;
   margin-bottom: 15rem;
 }
 
 .roads_3 span:nth-child(1){
-  width:45%
+  width:45%;
 }
 .roads_3 span:nth-child(2){
   width: 10%;
-  border-top: 1rem solid #deb298;
+  border-bottom: 1rem solid #deb298;
   position: relative;
 }
 .roads_3 span:nth-child(2)::before{
   content: "";
   position: absolute;
-  top:-32.5vh;
-  left:47.5%;
+  bottom: 0;
+  left:50%;
   width: 1rem;
   height: 20rem;
   background-color: #234d67;
 }
 .roads_3 span:nth-child(3){
-  width:45%
+  width:45%;
 }
 
 /*  Contact */
@@ -419,26 +429,39 @@ header {
   line-height: 20rem;
 }
 
+.email-address :hover{
+  border-bottom: 1rem solid #deb298;
+}
+
 .sns-links_2 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
+
 
 .sns-link_2-item {
   display: flex;
   align-items: center;
 }
-.sns-link_2-item p{
+
+.sns-link_2-item :hover{
+  color: #eeeeee;
+  background-color: #234d67;
+  border-radius: 10%;
+}
+
+.sns-link_2-item a {
   display: block;
-  font-size: 3rem;
+}
+
+.sns-link_2-item span{
+  display: block;
   color: #234d67;
   padding: 1rem;
 }
 
-.sns-link_2-item span{
-  color: #234d67;
-  padding: 1rem;
-}
+
+
 
 .lines_4{
   display: flex;
